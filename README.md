@@ -16,7 +16,7 @@ These two steps are repeated until convergence.
 The algorithm is implemented using NumPy and Scipy: [em_algorithm.py](src/em_algorithm.py).
 
 An example of the algorithm applied on a 2D generated dataset could be found in [GMM_example.ipynb](GMM_example.ipynb).
-![](https://github.com/reutregev/gmm_em/blob/algo-impl-new-design/figures/clusters.gif)
+![](https://github.com/reutregev/gmm-em/blob/main/figures/clusters.gif)
 
 
 ### Usage
