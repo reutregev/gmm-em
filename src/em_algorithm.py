@@ -144,10 +144,10 @@ class GMM:
             log_likelihood, y_pred = self.single_em_iteration()
             ll_values.append(log_likelihood)
             # check convergence of the algorithm
-            if abs(log_likelihood - best_ll) <= LOG_LIKELIHOOD_CONVERGENCE: converged = True
+            converged = abs(log_likelihood - best_ll) <= LOG_LIKELIHOOD_CONVERGENCE
 
             # update the best log-likelihood value
-            if log_likelihood > best_ll: best_ll = log_likelihood
+            best_ll = log_likelihood if log_likelihood > best_ll else best_ll
 
             if plot_clusters:
                 if i % NUM_STEPS_TO_PLOT == 0:
