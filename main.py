@@ -15,7 +15,7 @@ def set_parser():
                        help="Two numbers that specify the range of search for the number of clusters. Must be > 1")
     group.add_argument("--n_clusters", type=int, help="Use the given number of clusters (> 1) as a parameter for EM algorithm")
     parser.add_argument("--data_path", type=str,
-                        help="Path to a binary file in NumPy .npy format, containing a array of [n_samples, n_features]")
+                        help="Path to a binary file in NumPy .npy format, containing an array of [n_samples, n_features]")
     parser.add_argument("--max_iter", type=int, default=MAX_ITER, help="Max iterations for EM algorithm")
 
     args = parser.parse_args()
